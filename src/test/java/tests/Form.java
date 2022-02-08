@@ -23,7 +23,7 @@ public class Form {
     @Test
     void successFillTest() {
         String firstName = "Alex";
-        String lastName = "lastName";
+        String lastName = "Lesli";
         String gender = "Male";
         String email = "alex@company.com";
         String phone = "6464645645";
@@ -31,7 +31,7 @@ public class Form {
         String year = "1992";
         String hobby1 = "Music";
         String hobby2 = "Reading";
-        String photoPath = "src/test/java/tests/1.png";
+        String photoPath = "src/test/java/resources/1.png";
         String address = "Saint-P";
         String state = "NCR";
         String city = "Noida";

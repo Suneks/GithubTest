@@ -20,11 +20,6 @@ public class Form {
         Configuration.browserSize = "1920x1080";
     }
 
-    @AfterEach
-    public void addAttachments() {
-        Selenide.closeWebDriver();
-    }
-
     @Test
     void successFillTest() {
         String firstName = "Alex";

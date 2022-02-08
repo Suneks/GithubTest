@@ -46,7 +46,6 @@ public class Form {
         String subject = "Biology";
         String photoPathName = "1.png";
 
-
         open("/automation-practice-form");
 
         $("#firstName").setValue(firstName);
@@ -89,8 +88,5 @@ public class Form {
                 text("Address " + address),
                 text("State and City " + state + " " + city)
         );
-
-
-      //  $("#userNumber").setValue(phone);
     }
 }

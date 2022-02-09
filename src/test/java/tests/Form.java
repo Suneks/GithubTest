@@ -1,8 +1,6 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -57,7 +55,8 @@ public class Form {
         $(byText(hobby1)).click();
         $(byText(hobby2)).click();
 
-        $("#uploadPicture").uploadFile(new File(photoPath));
+//      $("#uploadPicture").uploadFile(new File(photoPath));
+        $("#uploadPicture").uploadFromClasspath("1.png");
 
         $("#currentAddress").setValue(address);
 

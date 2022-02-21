@@ -24,9 +24,9 @@ public class DragAndDropTest {
     @Test
     void shouldCheckDragAndDrop() {
         open("https://the-internet.herokuapp.com/drag_and_drop");
-        //Перенесите прямоугольник А на место В
+        // Перенесите прямоугольник А на место В
         $("#column-b").dragAndDropTo($("#column-a"));
-        //Проверьте, что прямоугольники действительно поменялись
+        // Проверьте, что прямоугольники действительно поменялись
         $("#column-a").$("header").shouldHave(text("B"));
         $("#column-b").$("header").shouldHave(text("A"));
 
